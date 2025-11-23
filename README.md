@@ -79,23 +79,23 @@ This enriches the Trip experience with real-world travel information.
 
 
 app/
- └── src/main/java/com/cp3406/smarttravelplanningassistant
-      ├── data/
-      │    ├── dao/ (Room DAOs)
-      │    ├── entity/ (Room entities)
-      │    ├── database/ (Room database)
-      ├── di/ (Hilt modules)
-      ├── navigation/ (Navigation graph)
-      ├── ui/
-      │    ├── components/
-      │    ├── screens/
-      │    │    ├── trips/
-      │    │    ├── itinerary/
-      │    │    ├── expenses/
-      │    ├── viewmodel/
-      │    ├── theme/
-      ├── TravelAssistantApp.kt
-      └── MainActivity.kt
+└── src/main/java/com/cp3406/smarttravelplanningassistant
+├── data/
+│ ├── dao/ (Room DAOs)
+│ ├── entity/ (Room entities)
+│ ├── database/ (Room database)
+├── di/ (Hilt modules)
+├── navigation/ (Navigation graph)
+├── ui/
+│ ├── components/
+│ ├── screens/
+│ │ ├── trips/
+│ │ ├── itinerary/
+│ │ ├── expenses/
+│ ├── viewmodel/
+│ ├── theme/
+├── TravelAssistantApp.kt
+└── MainActivity.kt
 
 
 ## 🗄 Database Schema
