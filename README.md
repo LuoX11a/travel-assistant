@@ -74,6 +74,84 @@ This enriches the Trip experience with real-world travel information.
   GET /name/{country_name}
 
 
+## 🏗 Project Structure
+
+
+
+app/
+ └── src/main/java/com/cp3406/smarttravelplanningassistant
+      ├── data/
+      │    ├── dao/ (Room DAOs)
+      │    ├── entity/ (Room entities)
+      │    ├── database/ (Room database)
+      ├── di/ (Hilt modules)
+      ├── navigation/ (Navigation graph)
+      ├── ui/
+      │    ├── components/
+      │    ├── screens/
+      │    │    ├── trips/
+      │    │    ├── itinerary/
+      │    │    ├── expenses/
+      │    ├── viewmodel/
+      │    ├── theme/
+      ├── TravelAssistantApp.kt
+      └── MainActivity.kt
+
+
+## 🗄 Database Schema
+
+### Trip Table
+| Field        | Type   |
+|--------------|--------|
+| id           | Int (PK) |
+| name         | String |
+| destination  | String |
+| startDate    | String |
+| endDate      | String |
+
+### ItineraryItem Table
+| Field      | Type   |
+|------------|--------|
+| id         | Int (PK) |
+| tripId     | Int (FK) |
+| title      | String |
+| time       | String |
+| location   | String |
+| notes      | String |
+
+### Expense Table
+| Field      | Type   |
+|------------|--------|
+| id         | Int (PK) |
+| tripId     | Int (FK) |
+| amount     | Double |
+| category   | String |
+| currency   | String |
+| notes      | String |
+
+
+## 🧰 Tech Stack
+
+- Kotlin
+- Jetpack Compose (Material3)
+- MVVM Architecture
+- Hilt Dependency Injection
+- Room Database
+- Retrofit + Moshi for networking
+- Kotlin Coroutines & Flow
+
+
+## 🌐 API Integration
+
+This app integrates with the REST Countries API:
+
+GET https://restcountries.com/v3.1/name/japan
+
+**Used for:**
+- Fetching destination information
+- Displaying capital, region, population, flag
+
+
 
 ## Timeline
 | Week | Task |
