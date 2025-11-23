@@ -1,7 +1,7 @@
 # Smart Travel Planning Assistant ✈️  
 _A Kotlin Jetpack Compose Travel Planner App for CP3406_
 
-Smart Travel Planning Assistant is a mobile app built for **CP3406 **, implemented entirely with **Kotlin + Jetpack Compose + MVVM + Room + Hilt**.  
+Smart Travel Planning Assistant is a mobile app built for CP3406, implemented entirely with **Kotlin + Jetpack Compose + MVVM + Room + Hilt**.  
 It provides a complete travel organization experience including **Trip management**, **Itinerary planning**, **Expense tracking**, and **real-world API integration**.
 
 ---
